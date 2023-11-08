@@ -1,37 +1,8 @@
-const quizData = [
+/** const quizData = [
     {
-        question: "dünyanın en akıllı en olgun kadını kim?",
-        a: "ben",
-        b: "Elif",
-        c: "elif andiç",
-        d: "Esadın",
-        correct: "d",
+      
     },
-    {
-        question: "dünyanın en anlayışlı kadını kim peki ?",
-        a: "ben",
-        b: "Elif",
-        c: "elif andiç",
-        d: "Esadın",
-        correct: "d",
-    },
-    {
-        question: "en mükkemel ?",
-        a: "ben",
-        b: "Elif",
-        c: "elif andiç",
-        d: "Esadın",
-        correct: "d",
-    },
-    {
-        question: "prensesim kim?",
-        a: "ben",
-        b: "Elif",
-        c: "elif andiç",
-        d: "Esadın",
-        correct: "d",
-    },
-];
+];**/
 const quiz= document.getElementById('quiz')
 const answerEls = document.querySelectorAll('.answer')
 const questionEl = document.getElementById('question')
