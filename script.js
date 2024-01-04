@@ -1,8 +1,37 @@
-/** const quizData = [
+const quizData = [
     {
-      
+        question: "birinci soru?",
+        a: "b",
+        b: "Ef",
+        c: "e",
+        d: "doğru",
+        correct: "d",
     },
-];**/
+    {
+        question: "ikinci soru?",
+        a: "b",
+        b: "Ef",
+        c: "e",
+        d: "doğru",
+        correct: "d",
+    },
+    {
+        question: "üçüncü soru?",
+        a: "b",
+        b: "Ef",
+        c: "e",
+        d: "doğru",
+        correct: "d",
+    },
+    {
+        question: "dördüncü soru?",
+        a: "b",
+        b: "Ef",
+        c: "e",
+        d: "doğru",
+        correct: "d",
+    },
+];
 const quiz= document.getElementById('quiz')
 const answerEls = document.querySelectorAll('.answer')
 const questionEl = document.getElementById('question')
@@ -25,6 +54,7 @@ function loadQuiz() {
     c_text.innerText = currentQuizData.c
     d_text.innerText = currentQuizData.d
 }
+
 function deselectAnswers() {
     answerEls.forEach(answerEl => answerEl.checked = false)
 }
@@ -56,18 +86,17 @@ submitBtn.addEventListener('click', () => {
     }
 })
 
-
+//Timer
 var scnd=119;
-
 var countdiv=document.getElementById('countdown');
 var bar=document.getElementById('bar')
+
 countdown=setInterval(function(){
-    
-    passscn()
+passscn()
 },1000);
 function passscn(){
-    var min=Math.floor(scnd/60)
-var sec = scnd%60
+var min=Math.floor(scnd/60)
+var sec=scnd%60
 countdiv.innerHTML=min+":"+sec
 if(scnd<10){
     sec= "0"+ scnd%60
@@ -80,5 +109,4 @@ else{
     countdiv.innerHTML="zamanınız bitti"
     bar.style.backgroundColor="red"
 }
-
 }
